@@ -52,7 +52,8 @@ DynamicCost::DynamicCost(const CostingOptions& options, const TravelMode mode, u
     : pass_(0), allow_transit_connections_(false), allow_destination_only_(true), travel_mode_(mode),
       access_mask_(access_mask), flow_mask_(kDefaultFlowMask), shortest_(options.shortest()),
       ignore_restrictions_(options.ignore_restrictions()), ignore_oneways_(options.ignore_oneways()),
-      ignore_access_(options.ignore_access()), ignore_closures_(options.ignore_closures()) {
+      ignore_access_(options.ignore_access()), ignore_closures_(options.ignore_closures()),
+      filter_closures_(options.filter_closures()) {
   // Parse property tree to get hierarchy limits
   // TODO - get the number of levels
   uint32_t n_levels = sizeof(kDefaultMaxUpTransitions) / sizeof(kDefaultMaxUpTransitions[0]);
