@@ -208,6 +208,7 @@
    * ADDED: Regular speed on shortcut edges is calculated with turn durations taken into account. Truck, motorcycle and motorscooter profiles use OSRM-like turn duration. [#2662](https://github.com/valhalla/valhalla/pull/2662)
    * CHANGED: Remove astar algorithm and replace its use with timedep_forward as its redundant [#2706](https://github.com/valhalla/valhalla/pull/2706)
    * ADDED: If the length of the edge is greater than kMaxEdgeLength, then consider this a catastrophic error if the should_error bool is true in the set_length function. [#2678](https://github.com/valhalla/valhalla/pull/2678)a
+   * ADDED: If the length of the edge is greater than kMaxEdgeLength, then consider this a catastrophic error if the should_error bool is true in the set_length function. [#2678](https://github.com/valhalla/valhalla/pull/2678)
    * ADDED: Add support for ignoring live traffic closures for waypoints [#2685](https://github.com/valhalla/valhalla/pull/2685)
 
 ## Release Date: 2019-11-21 Valhalla 3.0.9
