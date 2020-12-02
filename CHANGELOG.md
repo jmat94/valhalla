@@ -212,6 +212,7 @@
    * ADDED: Regular speed on shortcut edges is calculated with turn durations taken into account. Truck, motorcycle and motorscooter profiles use OSRM-like turn duration. [#2662](https://github.com/valhalla/valhalla/pull/2662)
    * CHANGED: Remove astar algorithm and replace its use with timedep_forward as its redundant [#2706](https://github.com/valhalla/valhalla/pull/2706)
    * ADDED: If width <= 1.9 then no access for auto, truck, bus, taxi, emergency and hov. [#2713](https://github.com/valhalla/valhalla/pull/2713)
+   * CHANGED: Handle GraphTile objects as shared pointers [#2703](https://github.com/valhalla/valhalla/pull/2703)
 
 ## Release Date: 2019-11-21 Valhalla 3.0.9
 * **Bug Fix**
